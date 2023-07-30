@@ -42,10 +42,7 @@ jobs:
       with:
         #username: # optional
         password: ${{ secrets.REGISTRY_LOGIN_SERVER }}
-        # Specifies whether the given registry is ECR (auto, true or false)
-        ecr: # optional, default is auto
-        # Log out from the Docker registry at the end of a job
-        logout: # optional, default is true
+
         
     - run: |
         docker build . -t nikiakbar/spring:development
