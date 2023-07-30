@@ -45,6 +45,6 @@ jobs:
 
         
     - run: |
-        docker build . -t nikiakbar/spring:development
-        docker push nikiakbar/spring:development
+        docker build . -t nikiakbar/spring:api-development
+        docker push nikiakbar/spring:api-development
         
